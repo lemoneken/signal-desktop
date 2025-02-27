@@ -34,7 +34,7 @@ source-code: https://github.com//snapcrafters/signal-desktop
 license: AGPL-3.0-only
 adopt-info: signal-desktop
 icon: snap/gui/signal-desktop.png
-version: 7.43.0
+version: 7.41.0
 
 base: core24
 grade: stable
@@ -42,7 +42,6 @@ confinement: strict
 compression: lzo
 
 platforms:
-  amd64:
   arm64:
 
 parts:
