@@ -36,7 +36,7 @@ adopt-info: signal-desktop
 icon: snap/gui/signal-desktop.png
 version: 7.43.0
 
-base: core20
+base: core24
 grade: stable
 confinement: strict
 compression: lzo
