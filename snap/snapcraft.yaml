@@ -41,10 +41,6 @@ grade: stable
 confinement: strict
 compression: lzo
 
-platforms:
-  amd64:
-  arm64:
-
 parts:
   # NodeJS dependency which uses a non-proxy aware fetch during its build.
   # The purpose of this part is to download the module and fetch the required file
