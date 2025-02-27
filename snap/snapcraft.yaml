@@ -36,10 +36,13 @@ adopt-info: signal-desktop
 icon: snap/gui/signal-desktop.png
 version: 7.42.0
 
-base: core22
+base: core24
 grade: stable
 confinement: strict
 compression: lzo
+
+platforms:
+  arm64:
 
 parts:
   # NodeJS dependency which uses a non-proxy aware fetch during its build.
