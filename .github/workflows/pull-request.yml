@@ -10,8 +10,15 @@ concurrency:
 
 jobs:
   build:
-    name: 🧪 Build snap on amd64
+    name: 🧪 Build snap on arm64
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        platform:
+        - arm64
     steps:
-      - name: 🧪 Build snap on amd64
-        uses: snapcrafters/ci/test-snap-build@main
+    - uses: actions/checkout@v3
+    - uses: docker/setup-qemu-action@v1
+    - uses: diddlesnaps/snapcraft-multiarch-action@v1
+      with:
+        architecture: ${{ matrix.platform }}
